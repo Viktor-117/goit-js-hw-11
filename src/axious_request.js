@@ -34,7 +34,6 @@ export default class AxiousRequest {
 
   async incrementPage() {
     this.page += 1;
-    console.log(this.page);
   }
 
   async resetPage() {

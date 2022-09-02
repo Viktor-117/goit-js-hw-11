@@ -63,7 +63,6 @@ async function onLoadMore() {
   const galleryRender = photoCardMarkup(images.hits);
   render(galleryRender);
   totalHits -= images.hits.length;
-  console.log(totalHits);
   if (totalHits === 0 || totalHits < 0) {
     Notiflix.Notify.info(
       "We're sorry, but you've reached the end of search results."
@@ -83,7 +82,6 @@ function render(galleryMarkup) {
 
 function switchLoadMoreBtn(hitsValue) {
   if (hitsValue === 0 || hitsValue < 0) {
-    console.log(hitsValue);
     refs.loadMoreBtn.style.display = 'none';
   } else {
     refs.loadMoreBtn.style.display = 'block';
