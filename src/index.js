@@ -12,7 +12,7 @@ const refs = {
 };
 
 const fetchImages = new AxiousRequest();
-let galleryLightBox = new SimpleLightbox('gallery a', {
+let galleryLightBox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
